@@ -25,5 +25,5 @@ fn main() {
     let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
 
     ctx.set_contents(output).unwrap(); // Copy the header to clipboard.
-    thread::sleep(time::Duration::from_secs(1)); // This is for Linux users.
+    thread::sleep(time::Duration::from_millis(100)); // This is for Linux users.
 }
